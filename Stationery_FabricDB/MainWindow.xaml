@@ -1,0 +1,67 @@
+﻿<Window x:Class="Stationery_FabricDB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Stationery_FabricDB"
+        mc:Ignorable="d"
+        Title="StationeryDB" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="datagrid" BorderBrush="#FF7290AD" Background="#FFD0D0D0" Margin="0,23,0,0"/>
+
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Show">
+                <MenuItem Header="Show All Stationery Names" Click="MenuItemShowAll_Click"/>
+                <MenuItem Header="Show All Stationery Types" Click="MenuItemShowTypes_Click"/>
+                <MenuItem Header="Show All Managers" Click="MenuItemShowManagers_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="MinMax">
+                <MenuItem Header="Show Max Quantity Stationery" Click="MenuItemShowMaxQuantity_Click"/>
+                <MenuItem Header="Show Min Quantity Stationery" Click="MenuItemShowMinQuantity_Click"/>
+                <MenuItem Header="Show Max Price Stationery" Click="MenuItemShowMaxPrice_Click"/>
+                <MenuItem Header="Show Min Price Stationery" Click="MenuItemShowMinPrice_Click"/>
+                <MenuItem Header="Show Average Quanity per Type" Click="MenuItemShowAVGTypeQua_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="Selective">
+                <MenuItem Header="Show Selected Type of Stationery" Click="MenuItemShowSelectedType_Click"/>
+                <MenuItem Header="Show Stationery Sold by Manager" Click="MenuItemShowSelectedManagerSold_Click"/>
+                <MenuItem Header="Show Stationery Bought by Firm" Click="MenuItemShowSelectedFirmBought_Click"/>
+                <MenuItem Header="Show Recent Transcation" Click="MenuItemShowRecentTransaction_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="CRUD">
+                <MenuItem Header="Create New Stationery" Click="MenuItemCreateNew_Click"/>
+                <MenuItem Header="Create New Type" Click="MenuItemCreateNewType_Click"/>
+                <MenuItem Header="Create New Manager" Click="MenuItemCreateNewManager_Click"/>
+                <MenuItem Header="Create New Firm" Click="MenuItemCreateNewFirm_Click"/>
+
+                <MenuItem Header="Update Stationery" Click="MenuItemUpdateStationery_Click"/>
+                <MenuItem Header="Update Type" Click="MenuItemUpdateType_Click"/>
+                <MenuItem Header="Update Manager" Click="MenuItemUpdateManager_Click"/>
+                <MenuItem Header="Update Firm" Click="MenuItemUpdateFirm_Click"/>
+                
+                <MenuItem Header="Delete Stationery" Click="MenuItemDeleteStationery_Click"/>
+                <MenuItem Header="Delete Type" Click="MenuItemDeleteType_Click"/>
+                <MenuItem Header="Delete Manager" Click="MenuItemDeleteManager_Click"/>
+                <MenuItem Header="Delete Firm" Click="MenuItemDeleteFirm_Click"/>
+
+            </MenuItem>
+
+            <MenuItem Header="Additional">
+                <MenuItem Header="Show Manager With Max Sold Quantity" Click="MenuItemShowManagerWithMaxSoldQuantity_Click"/>
+                <MenuItem Header="Show Manager With Max Total Profit" Click="MenuItemShowManagerWithMaxTotalProfit_Click"/>
+                <MenuItem Header="Show Manager With Max Total Profit In Period" Click="MenuItemShowManagerWithMaxTotalProfitInPeriod_Click"/>
+                <MenuItem Header="Show Firm With Max Total Purchase" Click="MenuItemShowFirmWithMaxTotalPurchase_Click"/>
+                <MenuItem Header="Show Type With Max Sold Quantity" Click="MenuItemShowTypeWithMaxSoldQuantity_Click"/>
+                <MenuItem Header="Show Most Profitable Type" Click="MenuItemShowMostProfitableType_Click"/>
+                <MenuItem Header="Show Most Popular Stationery" Click="MenuItemShowMostPopularStationery_Click"/>
+                <MenuItem Header="Show Stationery Not Sold for Selected Days" Click="MenuItemShowStationeryNotSoldForDays_Click"/>
+
+            </MenuItem>
+        </Menu>
+
+
+    </Grid>
+</Window>
